@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cryptocurrency survey</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Uncomment to use external CSS
+        <link rel="stylesheet" href="PATH/TO/EXTERNAL/STYLES.CSS">
+        -->
+
+        <style type="text/css">
+            html, body {
+                font-family: sans-serif;
+            }
+            .question {
+                font-weight: bold;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Cryptocurrencies</h1>
+        <p>
+            Please complete the survey below
+        </p>
+
+        <h2>About you</h2>
+        <form action="http://httpbin.org/post" method="post">
+            <p>
+                <!-- Nominal (Qualitative) data -->
+                <span class="question">Year level:</span>
+                <select name="year" required>
+                    <option></option>
+                    <option value="7">Year 7</option>
+                    <option value="8">Year 8</option>
+                    <option value="9">Year 9</option>
+                    <option value="10">Year 10</option>
+                    <option value="11">Year 11</option>
+                    <option value="12">Year 12</option>
+                    <option value="Teacher">Teacher</option>
+                </select>
+            </p>
+            <p>
+                <!-- Interval (Quantitative) data -->
+                <span class="question">Age:</span>
+                <input type="number" name="age" min="0" required>
+            </p>
+            <p>
+                <!-- Nominal (Qualitative) data -->
+                <span class="question" required>Gender:</span>
+                <label><input type="radio" name="gender" value="female">Female</label>
+                <label><input type="radio" name="gender" value="male">Male</label>
+                <label><input type="radio" name="gender" value="other">Other</label>
+            </p>
+            <h2>Survey</h2>
+            <hr>
+            <p>
+                <!-- Ordinal (Qualitative) data -->
+                <span class="question">How familiar are you with cryptocurrencies?</span>
+                <br/>
+                <label><input type="radio" name="interact" value="no">Not at all</label>
+                <label><input type="radio" name="interact" value="soso">Moderately</label>
+                <label><input type="radio" name="interact" value="yes">Strongly</label>
+            </p>
+            <p>
+                <!-- Ordinal (Qualitative) data -->
+                <span class="question">Have you ever invested in cryptocurrencies?</span>
+                <br/>
+                <label><input type="radio" name="interact" value="no">No</label>
+                <label><input type="radio" name="interact" value="yes">Yes</label>
+            </p>
+            <p>
+                <!-- Ratio (Quantitative) data -->
+                <span class="question">If so, how much have you invested?</span>
+                <br/>
+                <select name="moneyinvested">
+                    <option></option>
+                    <option value="1">I haven't invested</option>
+                    <option value="2">$0 - $100</option>
+                    <option value="3">$100 - $1,000</option>
+                    <option value="4">$1,000 - $10,000</option>
+                    <option value="5">$10,000 - $100,000</option>
+                    <option value="6">$100,000+</option>
+                    <option value="7">I'd rather not say</option>
+                </select>
+            </p>
+            <p>
+                <!-- Ordinal (Qualitative) data -->
+                <span class="question">Do you think that cryptocurrencies are a safe investment?</span>
+                <br/>
+                <label><input type="radio" name="interact" value="no">Strongly Agree</label>
+                <label><input type="radio" name="interact" value="yes">Agree</label>
+                <label><input type="radio" name="interact" value="yes">Neutral</label>
+                <label><input type="radio" name="interact" value="yes">Disagree</label>
+                <label><input type="radio" name="interact" value="yes">Strongly Disagree</label>
+            </p>
+            <p>
+                <!-- Nominal (Qualitative) data -->
+                <span class="question">What do you believe the advantages to investing in cryptocurrencies are?(Select all applicable answers)</span>
+                <br/>
+                <label><input type="checkbox" name="relation_am">Volatility of the market</label>
+                <label><input type="checkbox" name="relation_parent">Security</label>
+                <label><input type="checkbox" name="relation_am">Quick money</label>
+                <label><input type="checkbox" name="relation_parent">No advantages</label>
+            </p>
+
+            <p>
+                <!-- Nominal (Qualitative) data -->
+            <hr>
+                <input type="checkbox" name="relation_am" required>By ticking this box, you agree to our <a href="tos.html">terms of services.</a>
+
+
+            <input type="submit" value="Submit">
+        </form>
+
+        <!-- Uncomment to use external JavaScript
+        <script src="PATH/TO/EXTERNAL/SCRIPT.JS"></script>
+        -->
+
+        <script>
+            /* Your JS goes here */
+        </script>
+    </body>
+</html>
