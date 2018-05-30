@@ -1,0 +1,12 @@
+year 
+age
+gender
+familiarwithcryp
+investment
+moneyinvested
+safeinvestment
+adv_vol
+adv_sec
+adv_cash
+adv_no
+tosagreement
