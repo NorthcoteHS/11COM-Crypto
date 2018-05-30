@@ -1,12 +1,12 @@
-year 
-age
-gender
-familiarwithcryp
-investment
-moneyinvested
-safeinvestment
-adv_vol
-adv_sec
-adv_cash
-adv_no
-tosagreement
+year    VARCHAR(10)
+age     SMALLINT(100)       
+gender  VARCHAR(10)
+familiarwithcryp    VARCHAR(20)
+investment      VARCHAR(5)
+moneyinvested   VARCHAR(20)
+safeinvestment  VARCHAR(20)
+adv_vol     VARCHAR(30)
+adv_sec     VARCHAR(30)
+adv_cash    VARCHAR(30)     
+adv_no      VARCHAR(30)
+tosagreement    VARCHAR(100)
